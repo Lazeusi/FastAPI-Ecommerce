@@ -2,11 +2,15 @@ from fastapi import APIRouter
 
 from app.core.logger import logger
 
-router = APIRouter( 
+router = APIRouter(
     prefix="/home",
-    tags=["Home"],)
+    tags=["Home"],
+)
 
-@router.get("/",)
+
+@router.get(
+    "/",
+)
 async def root():
     logger.info("Root endpoint accessed")
     return {"message": " World"}
