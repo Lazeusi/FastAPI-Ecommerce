@@ -13,4 +13,4 @@ router = APIRouter(
 )
 async def root():
     logger.info("Root endpoint accessed")
-    return {"message": " World"}
+    return {"message": "World"}
